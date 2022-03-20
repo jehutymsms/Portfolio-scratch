@@ -54,24 +54,22 @@ nav{
     height: 10vh;
     background-color: var(--clr-primary-800);
     z-index: 2;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        font-size: 1.8em;
+        color:var(--clr-neutral-100);
+    }
+    div:hover{
+        color:var(--clr-primary-800);
+        background-color:var(--clr-neutral-100);
+    }
 }
 
-
-nav > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    font-size: 1.8em;
-    color:var(--clr-neutral-100);
-}
-
-nav > div:hover{
-    color:var(--clr-primary-800);
-    background-color:var(--clr-neutral-100);
-}
 
 #backgroundSection{
     position: fixed;
@@ -148,7 +146,6 @@ nav > div:hover{
 
 .projectImage{
     display:flex;
-    /* display:none; */
     height: 90%;
     width: 90%;
     margin:auto;
@@ -163,33 +160,29 @@ img{
     display:none;
     width: 100%;
     border-radius: 1em;
+    *{
+        transition: 0.5s;
+        width: 6em;
+    }
+    h2{
+        font-size: 1.5em;
+        margin: 0.5em;
+        width: 100%;
+    }
+    a{
+        padding: 0.2em;
+        margin: 0.2em;
+        color: var(--clr-primary-800);
+        border-radius: 1em;
+        text-decoration: none;
+        border: 0.2em solid var(--clr-primary-800);
+    }
+    a:hover{
+        color: var(--clr-neutral-100);
+        background-color: #3a3d40;
+    }
 }
 
-.project-description > *{
-    /* display:none; */
-    transition: 0.5s;
-    width: 6em;
-}
-
-.project-description > h2{
-    font-size: 1.5em;
-    margin: 0.5em;
-    width: 100%;
-}
-
-.project-description > a{
-    padding: 0.2em;
-    margin: 0.2em;
-    color: var(--clr-primary-800);
-    border-radius: 1em;
-    text-decoration: none;
-    border: 0.2em solid var(--clr-primary-800);
-}
-
-.project-description > a:hover{
-    color: var(--clr-neutral-100);
-    background-color: #3a3d40;
-}
 
 .projectImage:hover img{    
     display:none;
@@ -212,26 +205,23 @@ img{
     font-family: var(--ff-accent);
     color: var(--clr-neutral-100);
     z-index: 1;
+    *{
+        background-color:black ;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        border: 0.1em dotted white;
+        border-style: outset;
+        line-height: 1.5;
+    }
+    h3{
+        a{
+            color: var(--clr-neutral-100);
+        }
+        a:hover{
+            color:var(--clr-neutral-100);
+            background-color:var(--clr-primary-400);
+        }
+    }
 }
 
-#contact >*{
-    background-color:black ;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    border: 0.1em dotted white;
-    border-style: outset;
-}
-
-#contact > *{
-    line-height: 1.5;
-}
-
-#contact > h3 > a{
-    color: var(--clr-neutral-100);
-}
-
-#contact > h3 > a:hover{
-    color:var(--clr-neutral-100);
-    background-color:var(--clr-primary-400);
-}
 
