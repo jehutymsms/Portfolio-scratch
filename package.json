@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack serve --open",
+    "dev": "webpack-dev-server --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

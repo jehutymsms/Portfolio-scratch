@@ -2,6 +2,8 @@ import statCard from './images/Statspreviewcardcomponent.png';
 import restaurant from './images/odin-restaurant-page.png';
 import rockPaperScissors from './images/RockPaperScissors.png';
 import library from './images/odin-library-page.png';
+import toDo from './images/toDoProject.png';
+
 
 export const projectSection = (() => {
     const cacheDom = (() => {
@@ -11,7 +13,7 @@ export const projectSection = (() => {
 
     // Project Object info
     const projectTextObject = {
-        projects: ['project1', 'project2', 'project3', 'project4'],
+        projects: ['project1', 'project2', 'project3', 'project4','project5'],
         projectClass: ['projectImage', 'project-description'],
         projectTags: ['div', 'img', 'h2', 'a'],
         a: {
@@ -96,12 +98,34 @@ export const projectSection = (() => {
                 div: {
                     id: 'project4Description',
                     h2: {
-                        text: 'Restaurant Page',
+                        text: 'Restaurant Page Modular JS with Webpack',
                         codeLink: {
                             href: 'https://github.com/jehutymsms/odin-restaurant-page',
                         },
                         livePreview: {
                             href: 'https://jehutymsms.github.io/odin-restaurant-page/',
+                        },
+                    },
+                },
+            },
+        },
+        project5: {
+            id: 'project5',
+            project5Image: {
+                id: 'project5Image',
+                img: {
+                    src: toDo,
+                    alt: 'To Do List Application screenshot',
+                },
+                div: {
+                    id: 'project5Description',
+                    h2: {
+                        text: 'To Do App Modular JS with Webpack',
+                        codeLink: {
+                            href: 'https://github.com/jehutymsms/Odin-toDo-list',
+                        },
+                        livePreview: {
+                            href: 'https://jehutymsms.github.io/Odin-toDo-list/',
                         },
                     },
                 },
